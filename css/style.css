@@ -522,3 +522,44 @@ footer {
         width: 100%;
     }
 }
+
+/* RESPONSIVIDADE CELULAR */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVIDADE SETAS DO CELULAR */
+
+@media (max-width: 768px) {
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .step-card {
+        width: 100%;
+    }
+}
