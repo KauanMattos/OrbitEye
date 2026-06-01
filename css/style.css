@@ -419,3 +419,53 @@ nav {
 .ods img {
     width: 20%;
 }
+
+/* FOOTER */
+footer {
+    margin-top: 100px;
+
+    background-color: #0d1117;
+
+    padding: 50px 8%;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.footer-brand {
+    width: 250px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+
+    transition: .3s;
+}
+
+.footer-column a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #333;
+
+    text-align: center;
+}
