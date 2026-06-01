@@ -149,7 +149,6 @@ nav {
 
 /* TÍTULOS DAS SEÇÕES */
 .section-title {
-    margin-top: 60px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -168,4 +167,45 @@ nav {
 .works,
 .dashboard {
     padding: 100px 8%;
+}
+
+/* CARDS DE PROBLEMAS */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.problem-card {
+    width: 250px;
+    padding: 25px;
+
+    background-color: var(--card-backround);
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.problem-card:hover {
+    box-shadow: 0 0 30px var(--text-color-neon);
+    cursor: pointer;
+}
+
+.problem-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+
+    transition: .3s;
+}
+
+.problem-card:hover i {
+    color: var(--text-color-secondary-neon);
+}
+
+.problem-card h3 {
+    margin-bottom: 15px;
 }
