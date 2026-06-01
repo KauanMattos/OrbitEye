@@ -361,3 +361,61 @@ nav {
 
     gap: 20px;
 }
+
+/* SEÇÃO DASHBOARD + IMPACTO GLOBAL */
+.impact {
+    width: 70%;
+
+    background-color: var(--card-backround);
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.impact-cards {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+}
+
+.impact-card {
+    text-align: center;
+}
+
+.impact-card span {
+    font-size: 2.5rem;
+    color: var(--text-color-neon);
+    font-weight: 700;
+}
+
+.impact-card p {
+    font-weight: 300;
+}
+
+/* SEÇÃO DASHBOARD + ODS */
+.ods {
+    width: 40%;
+
+    background-color: var(--card-backround);
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.ods-icons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.ods img {
+    width: 20%;
+}
