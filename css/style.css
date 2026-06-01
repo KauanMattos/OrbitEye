@@ -563,3 +563,17 @@ footer {
         width: 100%;
     }
 }
+
+/* RESPONSIVIDADE FOOTER */
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-brand {
+        width: 100%;
+    }
+}
