@@ -106,3 +106,43 @@ nav {
     background-color: var(--primary-color);
     color: white;
 }
+
+/* HERO */
+.hero {
+    padding: 100px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.hero-content span {
+    color: var(--primary-color);
+}
+
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image img {
+    border: 2px solid transparent;
+    width: 560px;
+    transition: .5s;
+}
+
+.hero-image img:hover {
+    box-shadow: 0 0 40px var(--primary-color);
+    border-radius: 50px;
+}
