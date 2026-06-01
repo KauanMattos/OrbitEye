@@ -139,6 +139,16 @@ nav {
     color: var(--primary-color);
 }
 
+.hero-description {
+    color: var(--text-color-secondary);
+
+    font-size: 1.1rem;
+
+    margin: 20px 0;
+
+    line-height: 1.6;
+}
+
 .hero-buttons {
     margin-top: 30px;
 
@@ -478,4 +488,37 @@ footer {
     border-top: 1px solid #333;
 
     text-align: center;
+}
+
+/* RESPONSIVIDADE TABLET */
+
+@media (max-width: 1024px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dashboard-top,
+    .dashboard-bottom {
+        flex-direction: column;
+    }
+
+    .dashboard-stats,
+    .dashboard-map,
+    .dashboard-alerts,
+    .impact,
+    .ods {
+        width: 100%;
+    }
 }
