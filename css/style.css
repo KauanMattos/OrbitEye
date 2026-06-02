@@ -577,3 +577,42 @@ footer {
         width: 100%;
     }
 }
+
+/* PÁGINA SOBRE CSS */
+
+.about-hero {
+    padding: 50px 8%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.5rem;
+}
+
+.about-hero-content {
+    max-width: 600px;
+}
+
+.about-hero span {
+    color: var(--primary-color);
+}
+
+.about-hero p {
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+}
+
+.about-hero img {
+    border-radius: 3px;
+    box-shadow: 0 0 40px var(--primary-color);
+    width: 550px;
+    transition: .5s;
+}
+
+.about-hero img:hover {
+    box-shadow: none;
+    border: 2px solid var(--primary-color);
+}
