@@ -606,14 +606,13 @@ footer {
 
 .about-hero img {
     border-radius: 3px;
-    box-shadow: 0 0 40px var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
     width: 550px;
     transition: .5s;
 }
 
 .about-hero img:hover {
     box-shadow: none;
-    border: 2px solid var(--primary-color);
 }
 
 /* SOBRE.HTML - CARDS SECTION */
