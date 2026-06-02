@@ -788,3 +788,50 @@ footer {
     color: var(--text-color-secondary);
     font-size: 1rem;
 }
+
+/* RESPONSIVIDADE PÁGINA SOBRE - TABLET */
+
+@media (max-width: 1024px) {
+    .hero,
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+
+    }
+
+    .cards,
+    .cards-about {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .our-card {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .problems-solutions,
+    .data {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .problem,
+    .data-cards {
+        width: 100%;
+    }
+
+    .about-hero img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .problem {
+        margin: 0;
+    }
+
+}
+
