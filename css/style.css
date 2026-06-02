@@ -835,3 +835,51 @@ footer {
 
 }
 
+/* RESPONSIVIDADE PÁGINA SOBRE - CELULAR */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero img {
+        width: 100%;
+    }
+
+    .about-hero,
+    .about-cards,
+    .about-problems {
+        padding: 40px 5%;
+    }
+
+    .about-pillars,
+    .about-problems h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .problem h3 {
+        font-size: 1.3rem;
+    }
+
+    .problem p {
+        width: 100%;
+    }
+
+    .data-cards h3 {
+        font-size: 2.2rem;
+    }
+}
