@@ -895,3 +895,100 @@ footer {
         width: 100%;
     }
 }
+
+/* SOLUCAO.HTML - HERO SECTION */
+.solution-hero {
+    padding: 50px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    gap: 50px;
+}
+
+.solution-content {
+    margin-top: 25px;
+    max-width: 600px;
+}
+
+.solution-content h1 {
+    font-size: 3rem;
+}
+
+.solution-content span {
+    color: var(--primary-color);
+}
+
+.solution-content p {
+    margin-top: 15px;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+}
+
+.solution-image img {
+    width: 450px;
+    height: 55rem;
+    margin-top: 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    transition: .5s;
+}
+
+.solution-image:hover img {
+    box-shadow: 0 0 20px var(--text-color-neon);
+}
+
+/* SOLUCAO.HTML - HERO SECTION - CARDS */
+.solution-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin-top: 40px;
+}
+
+.solution-card {
+    width: 100%;
+    max-width: 650px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 30px;
+
+    background-color: var(--card-backround);
+
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.solution-card:hover {
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.solution-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.solution-card p {
+    font-size: .85rem;
+    color: var(--text-color-secondary);
+    margin: 0;
+}
+
+.solution-card i {
+    font-size: 3rem;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
