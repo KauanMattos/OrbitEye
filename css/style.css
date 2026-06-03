@@ -992,3 +992,99 @@ footer {
     margin-right: 20px;
     color: var(--primary-color);
 }
+
+/* SOLUCAO.HTML - TECHNOLOGIES USED SECTION - CARDS */
+.solution-line-cards {
+    border: 1px solid var(--primary-dark);
+}
+
+.technology {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.technology h3 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    padding: 30px 8%;
+    margin-bottom: 100px;
+}
+
+.technology h3 span {
+    color: var(--primary-color);
+}
+
+.technology-cards-border {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.technology-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--card-backround);
+    margin-bottom: 100px;
+}
+
+.technology-card i {
+    font-size: 9.5rem;
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+.technology-card p {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* SOLUCAO.HTML - CARDS TECHNOLOGY */
+
+/* HTML CARD */
+.technology-card.html {
+    transition: .5s;
+}
+
+.technology-card.html:hover {
+    box-shadow: 0 0 30px var(--danger-color);
+
+}
+
+.technology-card:hover .html-icon {
+    color: var(--danger-color);
+}
+
+/* CSS CARD */
+
+.technology-card.css {
+    transition: .5s;
+}
+
+.technology-card.css:hover {
+    box-shadow: 0 0 30px var(--secondary-color);
+}
+
+.technology-card:hover .css-icon {
+    color: var(--secondary-color);
+}
+
+/* JS CARD */
+
+.technology-card.js {
+    transition: .5s;
+}
+
+.technology-card.js:hover {
+    box-shadow: 0 0 30px yellow;
+}
+
+.technology-card:hover .js-icon {
+    color: yellow;
+}
+
