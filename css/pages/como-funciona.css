@@ -1,0 +1,156 @@
+﻿@import "../global.css";
+
+/* Hero */
+.how-hero {
+    padding: 80px 8%;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-dark);
+}
+
+.how-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.how-hero h1 span {
+    color: var(--primary-color);
+}
+
+.how-hero p {
+    color: var(--text-color-secondary);
+    font-size: 1.1rem;
+}
+
+/* Passos */
+.how-steps {
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--card-backround);
+    border: 1px solid var(--primary-dark);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    min-width: 50px;
+    text-align: center;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.step-content i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.step-content h3 {
+    font-size: 1.2rem;
+}
+
+.step-content p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+}
+
+/* NÃ­veis de alerta */
+.alert-levels {
+    padding: 80px 8%;
+    border-top: 1px solid var(--primary-dark);
+}
+
+.alert-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.alert-card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    background-color: var(--card-backround);
+    border-radius: 12px;
+    padding: 35px 25px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.alert-card i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.alert-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.alert-card p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.alert-yellow {
+    border-color: #F59E0B;
+}
+
+.alert-yellow i {
+    color: #F59E0B;
+}
+
+.alert-orange {
+    border-color: #F97316;
+}
+
+.alert-orange i {
+    color: #F97316;
+}
+
+.alert-red {
+    border-color: #EF4444;
+}
+
+.alert-red i {
+    color: #EF4444;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .how-hero h1 {
+        font-size: 2rem;
+    }
+
+    .how-steps {
+        padding: 50px 5%;
+    }
+
+    .step-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .alert-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
