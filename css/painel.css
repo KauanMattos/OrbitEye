@@ -1,0 +1,168 @@
+/* Painel Explorar Sistema */
+.painel-escondido {
+    display: none;
+}
+
+.painel-explorar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.painel-card {
+    position: relative;
+    z-index: 1000;
+    background-color: var(--card-backround);
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    padding: 40px;
+    width: 90%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.painel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.painel-header h2 {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.painel-header h2 i {
+    color: var(--primary-color);
+}
+
+.painel-fechar {
+    background: none;
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    color: var(--text-color-secondary);
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.painel-fechar:hover {
+    border-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.painel-status {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-color-secondary);
+}
+
+.status-item i {
+    color: var(--primary-color);
+    font-size: 1rem;
+    width: 18px;
+    text-align: center;
+}
+
+.status-ok {
+    border-color: #34D399;
+}
+
+.status-ok i {
+    color: #34D399;
+}
+
+.status-ok span {
+    color: #34D399;
+    font-weight: 700;
+}
+
+.painel-relogio {
+    text-align: center;
+    padding: 16px;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-dark);
+    border-radius: 10px;
+}
+
+.painel-relogio p {
+    font-size: 0.8rem;
+    color: var(--text-color-secondary);
+    margin-bottom: 6px;
+}
+
+.painel-relogio span {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--ascent-color);
+    font-family: monospace;
+}
+
+.painel-alertas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-color-secondary);
+}
+
+.painel-alertas strong {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.painel-btn {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+@media (max-width: 600px) {
+    .painel-card {
+        padding: 25px 18px;
+    }
+
+    .painel-relogio span {
+        font-size: 1.6rem;
+    }
+}
