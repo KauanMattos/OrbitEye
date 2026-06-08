@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
     <title>OrbitEye</title>
 </head>
 <body>
@@ -19,17 +19,22 @@
         </a>
 
         <ul class="nav-links">
-            <li><a class="nav-link">Home</a></li>
+            <li><a class="nav-link active-link" href="./index.html">Home</a></li>
             <li><a class="nav-link" href="./pages/sobre.html">Sobre</a></li>
-            <li><a class="nav-link" href="./pages/solucao.html">Solução</a></li>
-            <li><a class="nav-link">FAQ</a></li>
-            <li><a class="nav-link">Contato</a></li>
-            <li><a class="nav-link">Integrantes</a></li>
+            <li><a class="nav-link" href="./pages/como-funciona.html">Como Funciona</a></li>
+            <li><a class="nav-link" href="./pages/solucao.html">Solucao</a></li>
+            <li><a class="nav-link" href="./pages/faq.html">FAQ</a></li>
+            <li><a class="nav-link" href="./pages/contato.html">Contato</a></li>
+            <li><a class="nav-link" href="./pages/integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link" href="./pages/simulador.html">Simulador</a></li>
         </ul>
 
-        <a href="#" class="btn-primary">
-            Explorar Sistema
-        </a>
+        <!-- Menu Hamburguer -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!--Hero-->
@@ -48,11 +53,12 @@
 
             <div class="hero-buttons">
 
-                <a href="#" class="btn-primary">
-                    Explorar Sistema
-                </a>
+                <!-- id="btnExplorar" para o JS encontrar esse botao -->
+                <button id="btnExplorar" class="btn-primary">
+                    <i class="fa-solid fa-satellite"></i> Explorar Sistema
+                </button>
 
-                <a href="#" class="btn-secondary">
+                <a href="./pages/sobre.html" class="btn-secondary">
                     Saiba Mais
                 </a>
 
@@ -181,7 +187,7 @@
     </section>
 
     <!--Seção de Dashboard-->
-    <section class="dashboard">
+    <section class="dashboard" id="dashboard">
 
         <div class="section-title">
             <h2>Dashboard em Tempo Real</h2>
@@ -372,13 +378,13 @@
 
             <div class="footer-column">
 
-                <h4>Navegação</h4>
+                <h4>Navegacao</h4>
 
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Solução</a>
-                <a href="#">FAQ</a>
-                <a href="#">Contato</a>
+                <a href="./index.html">Home</a>
+                <a href="./pages/sobre.html">Sobre</a>
+                <a href="./pages/solucao.html">Solucao</a>
+                <a href="./pages/faq.html">FAQ</a>
+                <a href="./pages/contato.html">Contato</a>
 
             </div>
 
@@ -387,10 +393,9 @@
 
                 <h4>Plataforma</h4>
 
-                <a href="#">Explorar Sistema</a>
-                <a href="#">Dashboard</a>
-                <a href="#">Como Funciona?</a>
-                <a href="#">Problemas Monitorados</a>
+                <a href="./pages/como-funciona.html">Como Funciona?</a>
+                <a href="./pages/simulador.html">Simulador</a>
+                <a href="./pages/integrantes.html">Integrantes</a>
 
             </div>
 
@@ -428,5 +433,64 @@
             
     </footer>
 
+    <!-- PAINEL "EXPLORAR SISTEMA" -->
+    <!-- Começa escondido com a classe "painel-escondido" -->
+    <!-- O JS vai remover essa classe quando o botao for clicado -->
+    <div id="painelExplorar" class="painel-explorar painel-escondido">
+
+        <!-- Fundo escuro clicavel para fechar -->
+        <div class="painel-overlay" id="painelOverlay"></div>
+
+        <!-- Card principal do painel -->
+        <div class="painel-card">
+
+            <div class="painel-header">
+                <h2><i class="fa-solid fa-satellite"></i> Status do Sistema</h2>
+                <!-- Botao X para fechar, usa onclick direto -->
+                <button class="painel-fechar" onclick="fecharPainel()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Linha 1: status em tempo real -->
+            <div class="painel-status">
+                <div class="status-item status-ok">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Sistema Online</span>
+                </div>
+                <div class="status-item">
+                    <i class="fa-solid fa-satellite"></i>
+                    <span>127 Satelites Ativos</span>
+                </div>
+                <div class="status-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>98.6% Precisao IA</span>
+                </div>
+            </div>
+
+            <!-- Linha 2: relogio do satelite ao vivo -->
+            <div class="painel-relogio">
+                <p>Hora do Satelite (UTC-3)</p>
+                <!-- id="relogioPainel" — o JS vai atualizar esse numero -->
+                <span id="relogioPainel">--:--:--</span>
+            </div>
+
+            <!-- Linha 3: contador de alertas do dia -->
+            <div class="painel-alertas">
+                <p>Alertas detectados hoje:</p>
+                <strong id="contadorPainel">0</strong>
+            </div>
+
+            <!-- Botao para ir ao simulador -->
+            <a href="./pages/simulador.html" class="btn-primary painel-btn">
+                <i class="fa-solid fa-play"></i> Abrir Simulador
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/painel.js"></script>
 </body>
 </html>
