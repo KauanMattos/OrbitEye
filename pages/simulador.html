@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/pages/simulador.css">
+    <title>Simulador - OrbitEye</title>
+</head>
+<body>
+
+    <!-- Navegacao -->
+    <nav>
+        <a class="logo" href="../index.html">
+            <i class="fa-regular fa-eye"></i>OrbitEye
+        </a>
+
+        <ul class="nav-links">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="./sobre.html">Sobre</a></li>
+            <li><a class="nav-link" href="./como-funciona.html">Como Funciona</a></li>
+            <li><a class="nav-link" href="./solucao.html">Solucao</a></li>
+            <li><a class="nav-link" href="./faq.html">FAQ</a></li>
+            <li><a class="nav-link" href="./contato.html">Contato</a></li>
+            <li><a class="nav-link" href="./integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link active-link" href="./simulador.html">Simulador</a></li>
+        </ul>
+
+        <!-- Menu Hamburguer -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Simulador -->
+    <section class="sim-hero">
+        <h1>Simulador de <span>Alertas</span></h1>
+        <p>Selecione uma regiao e um evento para ver como o OrbitEye classifica o nivel de risco</p>
+    </section>
+
+    <!-- Secao Simulador -->
+    <section class="sim-section">
+
+        <div class="sim-container">
+
+            <!-- Formulario de Simulacao -->
+            <div class="sim-form">
+
+                <h2>Configure a Simulacao</h2>
+
+                <div class="sim-campo">
+                    <label for="regiao">
+                        <i class="fa-solid fa-location-dot"></i> Regiao
+                    </label>
+                    <select id="regiao">
+                        <option value="">Selecione uma regiao...</option>
+                        <option value="Regiao Norte">Regiao Norte</option>
+                        <option value="Regiao Nordeste">Regiao Nordeste</option>
+                        <option value="Regiao Centro-Oeste">Regiao Centro-Oeste</option>
+                        <option value="Regiao Sudeste">Regiao Sudeste</option>
+                        <option value="Regiao Sul">Regiao Sul</option>
+                    </select>
+                </div>
+
+                <div class="sim-campo">
+                    <label for="evento">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Tipo de Evento
+                    </label>
+                    <select id="evento">
+                        <option value="">Selecione um evento...</option>
+                        <option value="queimada">Queimada</option>
+                        <option value="enchente">Enchente</option>
+                        <option value="desmatamento">Desmatamento</option>
+                        <option value="seca">Seca</option>
+                    </select>
+                </div>
+
+                <button id="btnSimular" class="sim-btn">
+                    <i class="fa-solid fa-satellite"></i> Analisar via Satelite
+                </button>
+
+            </div>
+
+            <!-- Resultado da Simulacao -->
+            <div id="resultado" class="sim-resultado escondido">
+
+                <div class="sim-resultado-icone">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                </div>
+
+                <p class="sim-resultado-label">Nivel de Alerta</p>
+                <h3 id="nivel">--</h3>
+                <p id="descricao">--</p>
+
+                <div class="sim-resultado-info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Dados gerados por simulacao educacional OrbitEye</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Legenda dos Niveis -->
+        <div class="sim-legenda">
+
+            <h3>Niveis de Alerta</h3>
+
+            <div class="sim-legenda-cards">
+
+                <div class="legenda-card legenda-atencao">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h4>Atencao</h4>
+                    <p>Situacao monitorada. Sem risco imediato a populacao.</p>
+                </div>
+
+                <div class="legenda-card legenda-risco">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h4>Risco</h4>
+                    <p>Equipes em campo. Recomenda-se atencao redobrada.</p>
+                </div>
+
+                <div class="legenda-card legenda-critico">
+                    <i class="fa-solid fa-radiation"></i>
+                    <h4>Critico</h4>
+                    <p>Emergencia declarada. Autoridades notificadas imediatamente.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <a class="logo" href="../index.html">
+                    <i class="fa-regular fa-eye"></i>OrbitEye
+                </a>
+                <p>Monitorando a Terra alem dos limites.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Navegacao</h4>
+                <a href="../index.html">Home</a>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./solucao.html">Solucao</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contato.html">Contato</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Plataforma</h4>
+                <a href="../index.html#dashboard">Dashboard</a>
+                <a href="./como-funciona.html">Como Funciona?</a>
+                <a href="./simulador.html">Simulador</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <p>contato@orbiteye.com</p>
+                <p>+ 55 (11) 23455-7500</p>
+                <p>Sao Paulo, Brasil</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Status do Sistema</h4>
+                <p>Online</p>
+                <p>24/7 Monitoramento Ativo</p>
+                <p>127 Satelites Conectados</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>2026 OrbitEye - Monitoring Earth Beyond Limits</p>
+        </div>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/simulador.js"></script>
+</body>
+</html>
