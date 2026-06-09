@@ -3,8 +3,8 @@ Plataforma inteligente que utiliza satélites e inteligência artificial para mo
 
 ##  Integrantes
  Nome  RM 
- Kauê de Deus Nunes  RM:  
- Lucas Almeida Abrantes  RM: 572213
+ Kauã de Deus Nunes  RM: 572213 
+ Lucas Almeida Abrantes  RM: 570546
  Kauan Sfrizo Mattos  RM: 571599
  Guilherme da Costa Campos  RM: 571689
  Diego de Oliveira Zanon Harnisch  RM: 568945
