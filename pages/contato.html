@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/pages/contato.css">
+    <title>Contato - OrbitEye</title>
+</head>
+<body>
+
+    <!-- Navegacao -->
+    <nav>
+        <a class="logo" href="../index.html">
+            <i class="fa-regular fa-eye"></i>OrbitEye
+        </a>
+
+        <ul class="nav-links">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="./sobre.html">Sobre</a></li>
+            <li><a class="nav-link" href="./como-funciona.html">Como Funciona</a></li>
+            <li><a class="nav-link" href="./solucao.html">Solucao</a></li>
+            <li><a class="nav-link" href="./faq.html">FAQ</a></li>
+            <li><a class="nav-link active-link" href="./contato.html">Contato</a></li>
+            <li><a class="nav-link" href="./integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link" href="./simulador.html">Simulador</a></li>
+        </ul>
+
+        <!-- Menu Hamburguer -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Contato -->
+    <section class="contact-hero">
+        <h1>Fale <span>Conosco</span></h1>
+        <p>Entre em contato com a equipe OrbitEye</p>
+    </section>
+
+    <!-- Secao Contato -->
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <!-- Informacoes de Contato -->
+            <div class="contact-info">
+
+                <h2>Informacoes</h2>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <p>E-mail</p>
+                        <span>contato@orbiteye.com</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p>Telefone</p>
+                        <span>+ 55 (11) 23455-7500</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <p>Endereco</p>
+                        <span>Sao Paulo, Brasil</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <p>Horario</p>
+                        <span>SEG - SEX / 08:00h - 19:00h</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Formulario -->
+            <div class="contact-form-wrapper">
+
+                <h2>Enviar Mensagem</h2>
+
+                <form id="contactForm">
+
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" placeholder="Assunto da mensagem">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <a class="logo" href="../index.html">
+                    <i class="fa-regular fa-eye"></i>OrbitEye
+                </a>
+                <p>Monitorando a Terra alem dos limites.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Navegacao</h4>
+                <a href="../index.html">Home</a>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./solucao.html">Solucao</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contato.html">Contato</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Plataforma</h4>
+                <a href="../index.html#dashboard">Dashboard</a>
+                <a href="./como-funciona.html">Como Funciona?</a>
+                <a href="./simulador.html">Simulador</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <p>contato@orbiteye.com</p>
+                <p>+ 55 (11) 23455-7500</p>
+                <p>Sao Paulo, Brasil</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Status do Sistema</h4>
+                <p>Online</p>
+                <p>24/7 Monitoramento Ativo</p>
+                <p>127 Satelites Conectados</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>2026 OrbitEye - Monitoring Earth Beyond Limits</p>
+        </div>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/contato.js"></script>
+</body>
+</html>
