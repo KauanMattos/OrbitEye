@@ -1,0 +1,107 @@
+﻿@import "../global.css";
+
+/* Hero */
+.team-hero {
+    padding: 80px 8%;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-dark);
+}
+
+.team-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.team-hero h1 span {
+    color: var(--primary-color);
+}
+
+.team-hero p {
+    color: var(--text-color-secondary);
+    font-size: 1.1rem;
+}
+
+/* SeÃ§Ã£o */
+.team-section {
+    padding: 80px 8%;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Card */
+.team-card {
+    background-color: var(--card-backround);
+    border: 1px solid var(--primary-dark);
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+    width: 220px;
+}
+
+.team-avatar {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.team-avatar i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.team-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.team-role {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.team-rm {
+    color: var(--text-color-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.team-turma {
+    color: var(--text-color-secondary);
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.team-social a {
+    color: var(--text-color-secondary);
+    font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .team-hero h1 {
+        font-size: 2rem;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
