@@ -15,8 +15,11 @@ Plataforma inteligente que utiliza satélites e inteligência artificial para mo
 2. Precisa baixar o live server antes de rodar no live server
 3. nao esqueça de validar No canto direito Go live
  
- ## linguagens utilizadas
+ ## Linguagens utilizadas
  1. html
  2. css 
  3. javascript 
+
+ ## Repositório no GitHub
+ https://github.com/KauanMattos/OrbitEye
  
