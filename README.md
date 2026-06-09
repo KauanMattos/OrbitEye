@@ -3,11 +3,11 @@ Plataforma inteligente que utiliza satélites e inteligência artificial para mo
 
 ##  Integrantes
  Nome  RM 
- Kauê de Deus Neves  RM:  
- Lucas Almeida Abrantes  RM:  
- Natan Vieira Martins  RM:  
- Guilherme da Costa Campos  RM:  
- Diego de Oliveira Zayas  RM: 
+ Kauê de Deus Nunes  RM:  
+ Lucas Almeida Abrantes  RM: 572213
+ Kauan Sfrizo Mattos  RM: 571599
+ Guilherme da Costa Campos  RM: 571689
+ Diego de Oliveira Zanon Harnisch  RM: 568945
 
 ##  Como executar
 1. Clone ou baixe o repositório
