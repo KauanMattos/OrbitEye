@@ -13,3 +13,10 @@ Plataforma inteligente que utiliza satélites e inteligência artificial para mo
 1. Clone ou baixe o repositório
 2. Abra o arquivo 
 2. Precisa baixar o live server antes de rodar no live server
+3. nao esqueça de validar No canto direito Go live
+ 
+ ## linguagens utilizadas
+ 1. html
+ 2. css 
+ 3. javascript 
+ 
