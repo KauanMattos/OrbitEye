@@ -1,0 +1,269 @@
+﻿@import "../global.css";
+
+/* Hero */
+.sim-hero {
+    text-align: center;
+    padding: 80px 5% 50px;
+}
+
+.sim-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.sim-hero h1 span {
+    color: var(--primary-color);
+}
+
+.sim-hero p {
+    color: var(--text-color-secondary);
+    font-size: 1.1rem;
+}
+
+/* SeÃ§Ã£o */
+.sim-section {
+    padding: 20px 5% 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sim-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FormulÃ¡rio */
+.sim-form {
+    background-color: var(--card-backround);
+    border: 1px solid var(--primary-dark);
+    border-radius: 16px;
+    padding: 40px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 480px;
+}
+
+.sim-form h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.sim-campo {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sim-campo label {
+    font-size: 0.95rem;
+    color: var(--text-color-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sim-campo label i {
+    color: var(--primary-color);
+}
+
+.sim-campo select {
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.sim-campo select:focus {
+    border-color: var(--primary-color);
+}
+
+.sim-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.sim-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Resultado */
+.sim-resultado {
+    background-color: var(--card-backround);
+    border: 2px solid var(--primary-dark);
+    border-radius: 16px;
+    padding: 40px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.escondido {
+    display: none;
+}
+
+.sim-resultado-icone {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.sim-resultado-label {
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.sim-resultado h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.sim-resultado p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sim-resultado-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--text-color-secondary);
+    background-color: var(--card-backround);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* NÃ­veis */
+.nivel-atencao {
+    border-color: #F59E0B;
+}
+
+.nivel-atencao h3 {
+    color: #F59E0B;
+}
+
+.nivel-risco {
+    border-color: #F97316;
+}
+
+.nivel-risco h3 {
+    color: #F97316;
+}
+
+.nivel-critico {
+    border-color: #EF4444;
+}
+
+.nivel-critico h3 {
+    color: #EF4444;
+}
+
+/* Legenda */
+.sim-legenda {
+    text-align: center;
+}
+
+.sim-legenda h3 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.sim-legenda-cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.legenda-card {
+    background-color: var(--card-backround);
+    border-radius: 12px;
+    padding: 28px 24px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    border-top: 4px solid transparent;
+}
+
+.legenda-card i {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.legenda-card h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.legenda-card p {
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+    line-height: 1.5;
+}
+
+.legenda-atencao {
+    border-top-color: #F59E0B;
+}
+
+.legenda-atencao i {
+    color: #F59E0B;
+}
+
+.legenda-risco {
+    border-top-color: #F97316;
+}
+
+.legenda-risco i {
+    color: #F97316;
+}
+
+.legenda-critico {
+    border-top-color: #EF4444;
+}
+
+.legenda-critico i {
+    color: #EF4444;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sim-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sim-form,
+    .sim-resultado {
+        max-width: 100%;
+        width: 100%;
+    }
+}

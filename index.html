@@ -53,10 +53,9 @@
 
             <div class="hero-buttons">
 
-                <!-- id="btnExplorar" para o JS encontrar esse botao -->
-                <button id="btnExplorar" class="btn-primary">
+                <a href="./pages/simulador.html" class="btn-primary">
                     <i class="fa-solid fa-satellite"></i> Explorar Sistema
-                </button>
+                </a>
 
                 <a href="./pages/sobre.html" class="btn-secondary">
                     Saiba Mais
@@ -433,57 +432,6 @@
             
     </footer>
 
-    <!-- PAINEL "EXPLORAR SISTEMA" -->
-    <!-- Começa escondido com a classe "painel-escondido" -->
-    <!-- O JS vai remover essa classe quando o botao for clicado -->
-    <div id="painelExplorar" class="painel-explorar painel-escondido">
-
-        <!-- Fundo escuro clicavel para fechar -->
-        <div class="painel-overlay" id="painelOverlay"></div>
-
-        <!-- Card principal do painel -->
-        <div class="painel-card">
-
-            <div class="painel-header">
-                <h2><i class="fa-solid fa-satellite"></i> Status do Sistema</h2>
-                <!-- Botao X para fechar, usa onclick direto -->
-                <button class="painel-fechar" onclick="fecharPainel()">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-
-            <!-- Linha 1: status em tempo real -->
-            <div class="painel-status">
-                <div class="status-item status-ok">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <span>Sistema Online</span>
-                </div>
-                <div class="status-item">
-                    <i class="fa-solid fa-satellite"></i>
-                    <span>127 Satelites Ativos</span>
-                </div>
-                <div class="status-item">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>98.6% Precisao IA</span>
-                </div>
-            </div>
-
-            <!-- Linha 2: contador de alertas do dia -->
-            <div class="painel-alertas">
-                <p>Alertas detectados hoje:</p>
-                <strong id="contadorPainel">0</strong>
-            </div>
-
-            <!-- Botao para ir ao simulador -->
-            <a href="./pages/simulador.html" class="btn-primary painel-btn">
-                <i class="fa-solid fa-play"></i> Abrir Simulador
-            </a>
-
-        </div>
-
-    </div>
-
     <script src="./js/nav.js"></script>
-    <script src="./js/painel.js"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+﻿@import "../global.css";
+
+/* Hero */
+.faq-hero {
+    padding: 80px 8%;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-dark);
+}
+
+.faq-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.faq-hero h1 span {
+    color: var(--primary-color);
+}
+
+.faq-hero p {
+    color: var(--text-color-secondary);
+    font-size: 1.1rem;
+}
+
+/* SeÃ§Ã£o */
+.faq-section {
+    padding: 80px 8%;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Accordion */
+.faq-item {
+    background-color: var(--card-backround);
+    border: 1px solid var(--primary-dark);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-item.faq-active {
+    border-color: var(--primary-color);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    gap: 15px;
+}
+
+.faq-question span {
+    flex: 1;
+}
+
+.faq-icon {
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 22px;
+}
+
+.faq-item.faq-active .faq-answer {
+    max-height: 200px;
+    padding-bottom: 18px;
+}
+
+.faq-answer p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .faq-hero h1 {
+        font-size: 2rem;
+    }
+}
